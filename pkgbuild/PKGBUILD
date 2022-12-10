@@ -1,0 +1,20 @@
+# Maintainer: Barnabé <barnabedikartola@gmail.com>
+
+pkgname=biglinux-skel-wmaker
+pkgver=$(date +%y.%m.%d)
+pkgrel=$(date +%H%M)
+pkgdesc="Skel for BigLinux Community wmaker"
+arch=('any')
+url="https://github.com/biglinux/$pkgname"
+license=('GPL3')
+# depends=('')
+conflicts=('big-skel')
+provides=("$pkgname")
+source=("git+${url}.git")
+sha256sums=('SKIP')
+# install=${pkgname}.install
+
+package() {
+    cp -r "${srcdir}/${pkgname}/etc/" "${pkgdir}/"
+#     cp -r "${srcdir}/${pkgname}/usr/" "${pkgdir}/"
+}
