@@ -8,13 +8,16 @@ arch=('any')
 url="https://github.com/biglinux/$pkgname"
 license=('GPL3')
 # depends=('')
-conflicts=('big-skel')
 provides=("$pkgname")
 source=("git+${url}.git")
 sha256sums=('SKIP')
-# install=${pkgname}.install
+install=${pkgname}.install
+
+#bigskel=$(pacman -Ss biglinux-skel- | awk -F'[/ ]' '{print $2}')
+conflicts=('big-skel')
+#"$bigskel"
 
 package() {
     cp -r "${srcdir}/${pkgname}/etc/" "${pkgdir}/"
-#     cp -r "${srcdir}/${pkgname}/usr/" "${pkgdir}/"
+    cp -r "${srcdir}/${pkgname}/usr/" "${pkgdir}/"
 }

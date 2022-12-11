@@ -1,0 +1,35 @@
+{
+  soffice.Soffice = {
+    Icon = soffice.Soffice.xpm;
+  };
+  firefox.Firefox = {
+    Icon = firefox.Firefox.xpm;
+  };
+  yakuake.yakuake = {
+    Icon = yakuake.yakuake.xpm;
+  };
+  dolphin.dolphin = {
+    Icon = dolphin.dolphin.xpm;
+  };
+  bigbashview.py.bigbashview.py = {
+    Icon = bigbashview.py.bigbashview.py.xpm;
+  };
+  Drawer0.WMDrawer = {
+    Icon = gaveta.png;
+  };
+  kcalc.kcalc = {
+    Icon = kcalc.kcalc.xpm;
+  };
+  kate.kate = {
+    Icon = kate.kate.xpm;
+  };
+  Logo.WMDock = {
+    Icon = biglinux.png;
+  };
+  "polkit-kde-authentication-agent-1.polkit-kde-authentication-agent-1" = {
+    Icon = "polkit-kde-authentication-agent-1.polkit-kde-authentication-agent-1.xpm";
+  };
+  Logo.WMClip = {
+    Icon = clip.png;
+  };
+}

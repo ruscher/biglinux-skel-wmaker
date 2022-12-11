@@ -1,0 +1,80 @@
+{
+  FTitleColor = "#ffffff";
+  FrameBorderColor = "#b6b6b3";
+  MenuDisabledColor = "#555555";
+  PixmapPath = (
+    "/home/ruscher/GNUstep/Library/WindowMaker/Pixmaps",
+    "/home/ruscher/GNUstep/Library/WindowMaker/Backgrounds",
+    "/home/ruscher/GNUstep/Library/WindowMaker/CachedPixmaps",
+    "~/pixmaps",
+    "/usr/share/WindowMaker/Pixmaps",
+    "/usr/share/WindowMaker/Backgrounds",
+    "/usr/share/pixmaps"
+  );
+  IconTitleBack = "#2a92c9";
+  FTitleBack = (
+    thgradient,
+    "~/GNUstep/Library/WindowMaker/Themes/BigLinux-Texture.themed/cutcube.png",
+    139,
+    "#003e71",
+    "#2a91c8"
+  );
+  ClipTitleFont = "Lato:bold:pixelsize=10";
+  IconTitleFont = "Lato,sans serif:pixelsize=9";
+  LargeDisplayFont = "Lato,sans serif:pixelsize=24";
+  MoveDisplay = center;
+  IconTitleColor = "#ffffff";
+  MenuTitleColor = "#ffffff";
+  MenuTitleFont = "Lato,sans serif:bold:pixelsize=12";
+  MoveTo6to12Head = None;
+  WorkspaceBack = (
+    spixmap,
+    "~/GNUstep/Library/WindowMaker/Themes/BigLinux-Texture.themed/Big-retro.jpg",
+    gray20
+  );
+  HighlightTextColor = "#ffffff";
+  MenuScrollSpeed = ultrafast;
+  EnforceIconMargin = NO;
+  AppIconBalloons = YES;
+  ClipTitleColor = "#002a44";
+  MoveTo12to6Head = None;
+  FrameFocusedBorderColor = "#b6b6b3";
+  WindowTitleFont = "Lato:slant=0:weight=200:width=100:pixelsize=12";
+  ResizebarBack = (mhgradient, "#0bb1cb", "#2a92c9", "#2d85c6", "#006699");
+  MiniPreviewSize = 352;
+  KbdModeLock = NO;
+  FrameSelectedBorderColor = "#ffffff";
+  ToggleKbdModeKey = None;
+  MenuTextBack = (
+    tdgradient,
+    "~/GNUstep/Library/WindowMaker/Themes/BigLinux-Texture.themed/random-grey-variations.png",
+    139,
+    "#383838",
+    "#575757"
+  );
+  WindowPlacement = center;
+  CycleWorkspaces = YES;
+  MenuTextColor = "#dedede";
+  IconBack = (mhgradient, "#0bb1cb", "#2a92c9", "#2d85c6", "#006699");
+  AntialiasedText = YES;
+  WorkspaceNameDisplayPosition = bottom;
+  MenuTextFont = "Lato,sans serif:pixelsize=12";
+  MenuTitleBack = (mhgradient, "#0bb1cb", "#2a92c9", "#2d85c6", "#006699");
+  MouseWheelAction = SwitchWindows;
+  HighlightColor = "#006699";
+  WrapMenus = YES;
+  CClipTitleColor = "#2d85c6";
+  IconPath = (
+    "/home/ruscher/GNUstep/Library/Icons",
+    "/home/ruscher/GNUstep/Library/WindowMaker/Pixmaps",
+    "/home/ruscher/GNUstep/Library/WindowMaker/CachedPixmaps",
+    "~/pixmaps",
+    "/usr/share/WindowMaker/Icons",
+    "/usr/share/WindowMaker/Pixmaps",
+    "/usr/share/pixmaps"
+  );
+  PTitleBack = (mhgradient, "#2c2d3d", "#16171c", "#002a34", "#002a44");
+  UTitleColor = "#999999";
+  UTitleBack = (mhgradient, "#232526", "#414345", "#666666", "#888888");
+  PTitleColor = "#ffffff";
+}

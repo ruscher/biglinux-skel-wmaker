@@ -1,0 +1,182 @@
+{
+  Dock = {
+    AutoRaiseLower = No;
+    Applications = (
+      {
+        Forced = No;
+        Name = Logo.WMDock;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,0";
+        Lock = No;
+        Command = "-";
+      },
+      {
+        Forced = No;
+        Name = wmclock.WMClock;
+        DropCommand = "wmclock %d";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,1";
+        Lock = Yes;
+        PasteCommand = "wmclock %s";
+        Command = wmclock;
+      }
+    );
+    Applications1080 = (
+      {
+        Forced = No;
+        Name = Logo.WMDock;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,0";
+        Lock = No;
+        Command = "-";
+      },
+      {
+        Forced = No;
+        Name = wmclock.WMClock;
+        DropCommand = "wmclock %d";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,1";
+        Lock = Yes;
+        PasteCommand = "wmclock %s";
+        Command = wmclock;
+      }
+    );
+    Lowered = Yes;
+    Position = "-64,0";
+  };
+  Clip = {
+    Forced = No;
+    Name = Logo.WMClip;
+    BuggyApplication = No;
+    AutoLaunch = No;
+    Position = "0,0";
+    Lock = No;
+    Command = "-";
+  };
+  Drawers = (
+    {
+      Dock = {
+        AutoCollapse = Yes;
+        Applications = (
+          {
+            Forced = No;
+            Name = "polkit-kde-authentication-agent-1.polkit-kde-authentication-agent-1";
+            DropCommand = "/usr/lib/polkit-kde-authentication-agent-1 %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "-2,0";
+            Lock = No;
+            PasteCommand = "/usr/lib/polkit-kde-authentication-agent-1 %s";
+            Command = "/usr/lib/polkit-kde-authentication-agent-1";
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = yakuake.yakuake;
+            DropCommand = "yakuake %d";
+            BuggyApplication = No;
+            AutoLaunch = Yes;
+            Position = "-1,0";
+            Lock = Yes;
+            PasteCommand = "yakuake %s";
+            Command = yakuake;
+            Omnipresent = No;
+          }
+        );
+        Collapsed = No;
+        AutoAttractIcons = No;
+      };
+      Name = Drawer0;
+      Position = "1856,128";
+    }
+  );
+  Workspaces = (
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Applications = (
+          {
+            Forced = No;
+            Name = firefox.Firefox;
+            DropCommand = "firefox %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "0,1";
+            Lock = Yes;
+            PasteCommand = "firefox %s";
+            Command = firefox;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = dolphin.dolphin;
+            DropCommand = "dolphin %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "0,2";
+            Lock = Yes;
+            PasteCommand = "dolphin %s";
+            Command = dolphin;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = kate.kate;
+            DropCommand = "kate %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "0,4";
+            Lock = Yes;
+            PasteCommand = "kate %s";
+            Command = kate;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = soffice.Soffice;
+            DropCommand = "soffice %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "0,5";
+            Lock = Yes;
+            PasteCommand = "soffice %s";
+            Command = soffice;
+            Omnipresent = No;
+          },
+          {
+            Forced = No;
+            Name = kcalc.kcalc;
+            DropCommand = "kcalc %d";
+            BuggyApplication = No;
+            AutoLaunch = No;
+            Position = "0,3";
+            Lock = Yes;
+            PasteCommand = "kcalc %s";
+            Command = kcalc;
+            Omnipresent = No;
+          }
+        );
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = Yes;
+      };
+      Name = "\303\201rea de Trabalho 1";
+    },
+    {
+      Clip = {
+        AutoRaiseLower = No;
+        AutoCollapse = No;
+        Applications = ();
+        Collapsed = No;
+        AutoAttractIcons = No;
+        Lowered = Yes;
+      };
+      Name = "\303\201rea de Trabalho 2";
+    }
+  );
+}
