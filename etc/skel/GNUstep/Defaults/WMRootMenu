@@ -1,0 +1,222 @@
+(
+  BigLinux,
+  (
+    Favoritos,
+    ("Mozilla Firefox", EXEC, firefox),
+    (Dolphin, EXEC, dolphin),
+    (Calculadora, EXEC, kcalc),
+    ("Libre Office Writer", EXEC, "libreoffice --writer"),
+    (XTerm, EXEC, xterm),
+    (Kate, EXEC, kate)
+  ),
+  (
+    "BigLinux Apps",
+    (BigStore, EXEC, "big-store"),
+    (BigBashView, EXEC, bigbashview),
+    ("Redutor de ru\303\215dos", EXEC, "biglinux-noise-reduction-pipewire"),
+    ("OCR para PDF", EXEC, bigocrpdf),
+    (WebApps, EXEC, "biglinux-webapps")
+  ),
+  (
+    "Configura\303\247\303\265es",
+    (WindowMaker, EXEC, "/usr/lib/GNUstep/Applications/WPrefs.app/WPrefs"),
+    (BigStore, EXEC, "big-store"),
+    ("Pamac Manager", EXEC, "pamac-manager")
+  ),
+  (
+    "Escrit\303\263rio",
+    (
+      "Su\303\255te Office",
+      ("Libre Office", EXEC, libreoffice),
+      ("Libre Office Writer", EXEC, "libreoffice --writer"),
+      ("Libre Office Calc", EXEC, "libreoffice --calc"),
+      ("Libre Office Draw", EXEC, "libreoffice --draw"),
+      ("Libre Office Impress", EXEC, "libreoffice --impress")
+    ),
+    (Calculadora, EXEC, kcalc),
+    ("Vizualizador PDF", EXEC, okular),
+    (Kate, EXEC, kate)
+  ),
+  (
+    "Gr\303\241ficos",
+    (Gimp, EXEC, gimp),
+    (Krita, EXEC, krita),
+    (Inkscape, EXEC, inkscape)
+  ),
+  (
+    Internet,
+    (Brave, EXEC, brave),
+    ("Mozilla Firefox", EXEC, firefox),
+    (qBittorrent, EXEC, qbittorrent),
+    (JDownloader, EXEC, jdownloader)
+  ),
+  (
+    Jogos,
+    ("Campo Minado", EXEC, kmines),
+    (Sudoku, EXEC, ksudoku),
+    (Paciencia, EXEC, kpat)
+  ),
+  (
+    "Multim\303\255dia",
+    (SMPlayer, EXEC, smplayer),
+    (VLC, EXEC, vlc),
+    (Clementine, EXEC, clementine),
+    (Helvum, EXEC, helvum),
+    ("ALSA Mixer Grafico", EXEC, "gnome-alsamixer"),
+    ("ALSA Mixer Terminal", EXEC, "urxvt -e alsamixer")
+  ),
+  (
+    Sistema,
+    ("Info Armazenamento", EXEC, gsmartcontrol),
+    (KSystemLog, EXEC, ksystemlog),
+    (Htop, EXEC, "urxvt -e htop")
+  ),
+  (
+    WindowMaker,
+    (
+      "Apar\303\252ncia",
+      (
+        Temas,
+        OPEN_MENU,
+        "-noext /usr/share/WindowMaker/Themes $HOME/GNUstep/Library/WindowMaker/Themes WITH setstyle"
+      ),
+      (
+        Estilos,
+        OPEN_MENU,
+        "-noext /usr/share/WindowMaker/Styles $HOME/GNUstep/Library/WindowMaker/Styles WITH setstyle"
+      ),
+      (
+        "\303\215cones",
+        OPEN_MENU,
+        "-noext /usr/share/WindowMaker/IconSets $HOME/GNUstep/Library/WindowMaker/IconSets WITH seticons"
+      ),
+      (
+        "Plano de fundo",
+        (
+          "S\303\263lido",
+          (
+            Preto,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"black\")'"
+          ),
+          (
+            "Ametista escuro",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#505075\")'"
+          ),
+          (
+            Anil,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#243e6c\")'"
+          ),
+          (
+            Turquesa,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#243e6c\")'"
+          ),
+          (
+            "P\303\272rpura",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#554466\")'"
+          ),
+          (
+            Pardo,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"wheat4\")'"
+          ),
+          (
+            "Cinza escuro",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#333340\")'"
+          ),
+          (
+            Vinho,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(solid, \"#400020\")'"
+          )
+        ),
+        (
+          "Degrad\303\252",
+          (
+            "P\303\264r do sol",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(mvgradient, deepskyblue4, black, deepskyblue4, tomato4)'"
+          ),
+          (
+            "C\303\251u",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"blue4\", \"white\"'"
+          ),
+          (
+            "Ametista escuro",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#7080a5\", \"#101020\"'"
+          ),
+          (
+            Anil,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#746ebc\", \"#242e4c\"'"
+          ),
+          (
+            "P\303\272rpura",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#654c66\", \"#151426\"'"
+          ),
+          (
+            Pardo,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#a09060\", \"#302010\"'"
+          ),
+          (
+            "Cinza Escuro",
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#636380\", \"#131318\"'"
+          ),
+          (
+            Vinho,
+            EXEC,
+            "wdwrite WindowMaker WorkspaceBack '(vgradient, \"#600040\", \"#180010\"'"
+          )
+        ),
+        (
+          Imagens,
+          OPEN_MENU,
+          "-noext /usr/share/wallpapers/ WITH wmsetbg -u "
+        )
+      ),
+      (
+        "Salvar tema",
+        EXEC,
+        "getstyle -p \"%a(Theme name, Name to save theme as)\""
+      ),
+      (
+        "Salvar \303\255cones",
+        SHEXEC,
+        "geticonset $HOME/GNUstep/Library/WindowMaker/IconSets/\"%a(IconSet name,Name to save icon set as)\""
+      )
+    ),
+    (Lupa, EXEC, wmagnify),
+    ("\303\201reas de trabalho", WORKSPACE_MENU),
+    (
+      "\303\201rea de trabalho",
+      ("Minimizar janelas", HIDE_OTHERS),
+      ("Maximizar janelas", SHOW_ALL),
+      ("Organizar \303\255cones", ARRANGE_ICONS),
+      (Atualizar, REFRESH),
+      ("Salvar sess\303\243o", SAVE_SESSION),
+      ("Reiniciar sess\303\243o", CLEAR_SESSION)
+    ),
+    (
+      "Configurar WindowMaker",
+      EXEC,
+      "/usr/lib/GNUstep/Applications/WPrefs.app/WPrefs"
+    ),
+    ("Painel de informa\303\247\303\265es", INFO_PANEL),
+    ("Reiniciar Window Maker", RESTART),
+    ("Sair do Window Maker", EXIT)
+  ),
+  (Executar..., EXEC, "%A(Executar, digite o comando:)"),
+  (Logout, SHEXEC, "pkill -KILL -u $USER"),
+  (Reiniciar, EXEC, reboot),
+  (Desligar, EXEC, "shutdown now")
+)
