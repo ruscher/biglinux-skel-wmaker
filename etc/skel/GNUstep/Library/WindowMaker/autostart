@@ -14,7 +14,8 @@
 #
 # This file must be executable.
 #
-conky &
+~/.config/polybar/launch.sh --material &
+#conky &
 wmclock &
 yakuake &
 /usr/lib/polkit-kde-authentication-agent-1 &
