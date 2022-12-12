@@ -21,7 +21,8 @@
     "Configura\303\247\303\265es",
     (WindowMaker, EXEC, "/usr/lib/GNUstep/Applications/WPrefs.app/WPrefs"),
     (BigStore, EXEC, "big-store"),
-    ("Pamac Manager", EXEC, "pamac-manager")
+    ("Pamac Manager", EXEC, "pamac-manager"),
+    ("Configura\303\247\303\265es da Tela", EXEC, arandr)
   ),
   (
     "Escrit\303\263rio",
