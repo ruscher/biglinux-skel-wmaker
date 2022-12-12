@@ -3,9 +3,9 @@
   FrameBorderColor = "#b6b6b3";
   MenuDisabledColor = "#555555";
   PixmapPath = (
-    "/home/ruscher/GNUstep/Library/WindowMaker/Pixmaps",
-    "/home/ruscher/GNUstep/Library/WindowMaker/Backgrounds",
-    "/home/ruscher/GNUstep/Library/WindowMaker/CachedPixmaps",
+    "/home/$USER/GNUstep/Library/WindowMaker/Pixmaps",
+    "/home/$USER/GNUstep/Library/WindowMaker/Backgrounds",
+    "/home/$USER/GNUstep/Library/WindowMaker/CachedPixmaps",
     "~/pixmaps",
     "/usr/share/WindowMaker/Pixmaps",
     "/usr/share/WindowMaker/Backgrounds",
@@ -65,9 +65,9 @@
   WrapMenus = YES;
   CClipTitleColor = "#2d85c6";
   IconPath = (
-    "/home/ruscher/GNUstep/Library/Icons",
-    "/home/ruscher/GNUstep/Library/WindowMaker/Pixmaps",
-    "/home/ruscher/GNUstep/Library/WindowMaker/CachedPixmaps",
+    "/home/$USER/GNUstep/Library/Icons",
+    "/home/$USER/GNUstep/Library/WindowMaker/Pixmaps",
+    "/home/$USER/GNUstep/Library/WindowMaker/CachedPixmaps",
     "~/pixmaps",
     "/usr/share/WindowMaker/Icons",
     "/usr/share/WindowMaker/Pixmaps",

@@ -4,12 +4,12 @@
       "BigLinux-texture",
       (
         thgradient,
-        "/home/ruscher/GNUstep/Library/WindowMaker/Backgrounds/cutcube.png",
+        "/home/$USER/GNUstep/Library/WindowMaker/Backgrounds/cutcube.png",
         139,
         "#003e71",
         "#2a91c8"
       ),
-      "/home/ruscher/GNUstep/Library/WindowMaker/WPrefs/63950427.cache"
+      "/home/$USER/GNUstep/Library/WindowMaker/WPrefs/63950427.cache"
     )
   );
   NoXSetStuff = NO;
