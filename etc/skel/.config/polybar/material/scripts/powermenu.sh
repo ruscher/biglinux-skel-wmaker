@@ -11,11 +11,11 @@ uptime=$(uptime -p | sed -e 's/up //g')
 rofi_command="rofi -no-config -theme $dir/powermenu.rasi"
 
 # Options
-shutdown=" Shutdown"
-reboot=" Restart"
-lock=" Lock"
-suspend=" Sleep"
-logout=" Logout"
+shutdown=" Desligar"
+reboot=" Reiniciar"
+# lock=" Bloquear"
+# suspend=" Suspender"
+logout=" Encerrar sessão"
 
 # Confirmation
 confirm_exit() {
@@ -23,24 +23,25 @@ confirm_exit() {
         -no-config\
 		-i\
 		-no-fixed-num-lines\
-		-p "Are You Sure? : "\
+		-p "Tem certeza? : "\
 		-theme $dir/confirm.rasi
 }
 
 # Message
 msg() {
-	rofi -no-config -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
+	rofi -no-config -theme "$dir/message.rasi" -e "Opções disponíveis  -  yes / y / no / n"
 }
 
 # Variable passed to rofi
-options="$lock\n$suspend\n$logout\n$reboot\n$shutdown"
+options="$logout\n$reboot\n$shutdown"
 
-chosen="$(echo -e "$options" | $rofi_command -p "Uptime: $uptime" -dmenu -selected-row 0)"
+chosen="$(echo -e "$options" | $rofi_command -p "Tempo de atividade: $uptime" -dmenu -selected-row 0)"
 case $chosen in
     $shutdown)
+		shutdown now
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
-			systemctl poweroff
+			shutdown now
 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
 			exit 0
         else
@@ -48,35 +49,37 @@ case $chosen in
         fi
         ;;
     $reboot)
+		reboot
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
-			systemctl reboot
+			reboot
 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
 			exit 0
         else
 			msg
         fi
         ;;
-    $lock)
-		if [[ -f /usr/bin/i3lock ]]; then
-			i3lock
-		elif [[ -f /usr/bin/betterlockscreen ]]; then
-			betterlockscreen -l
-		fi
-        ;;
-    $suspend)
-		ans=$(confirm_exit &)
-		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
-			mpc -q pause
-			amixer set Master mute
-			systemctl suspend
-		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
-			exit 0
-        else
-			msg
-        fi
-        ;;
+#     $lock)
+# 		if [[ -f /usr/bin/i3lock ]]; then
+# 			i3lock
+# 		elif [[ -f /usr/bin/betterlockscreen ]]; then
+# 			betterlockscreen -l
+# 		fi
+#         ;;
+#     $suspend)
+# 		ans=$(confirm_exit &)
+# 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
+# 			mpc -q pause
+# 			amixer set Master mute
+# 			systemctl suspend
+# 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
+# 			exit 0
+#         else
+# 			msg
+#         fi
+#         ;;
     $logout)
+		pkill -KILL -u $USER
 		ans=$(confirm_exit &)
 		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
 			if [[ "$DESKTOP_SESSION" == "Openbox" ]]; then
@@ -85,6 +88,8 @@ case $chosen in
 				bspc quit
 			elif [[ "$DESKTOP_SESSION" == "i3" ]]; then
 				i3-msg exit
+			elif [[ "$DESKTOP_SESSION" == "wmaker" ]]; then
+				pkill -KILL -u $USER
 			fi
 		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
 			exit 0

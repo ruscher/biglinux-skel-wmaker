@@ -8,7 +8,7 @@
  */
 
 configuration {
-	font:							"Fantasque Sans Mono 10";
+	font:							"Lato 10";
     show-icons:                     true;
 	icon-theme: 					"Papirus";
     display-drun: 					"";
@@ -48,7 +48,7 @@ entry {
     placeholder-color:              @bar;
     expand:                         true;
     horizontal-align:               0;
-    placeholder:                    "Search...";
+    placeholder:                    "Buscar...";
     padding:                        1px;
     blink:                          true;
 }
