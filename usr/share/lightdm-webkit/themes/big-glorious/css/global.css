@@ -2,7 +2,7 @@
 	--global-bg: #00000020;
 	--global-fg: #F2F2F2FF;
 	--global-animation-speed: 300ms;
-	--global-blur-strength: 9px;
+	--global-blur-strength: 0px;
 	--tooltip-error-bg: #ff3a3060;
 	--tooltip-success-bg: #28cd4160;
 	--button-bg-hover: #F2F2F230;

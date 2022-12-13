@@ -68,11 +68,11 @@
 }
 
 #goodbye-power-icon.goodbye-content {
-	width: 88px;
-	height: 88px;
+	width: 40px;
+	height: 40px;
 	object-fit: contain;
 	display: block;
-	margin: 0 10px;
+	margin: -5px 15px;
 }
 
 #screen-goodbye-content-parent.screen-content-parent {
@@ -80,7 +80,7 @@
 }
 
 #goodbye-message.goodbye-content {
-	font-size: 56pt;
+	font-size: 24pt;
 	font-weight: 400;
 	font-style: italic;
 	color: var(--global-fg);
@@ -111,7 +111,7 @@
 }
 
 #greeter-message.greeter-content {
-	font-size: 32pt;
+	font-size: 22pt;
 	font-weight: 400;
 	text-align: center;
 	color: var(--global-fg);
@@ -125,7 +125,7 @@
 }
 
 #greeter-date.greeter-content {
-	font-size: 32pt;
+	font-size: 22pt;
 	font-weight: 400;
 	text-align: center;
 	color: var(--global-fg);

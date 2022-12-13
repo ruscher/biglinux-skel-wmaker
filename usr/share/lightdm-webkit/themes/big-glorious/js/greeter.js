@@ -29,6 +29,12 @@ class GreeterScreen {
 				this._hideGreeter();
 			}
 		);
+		document.addEventListener("keypress",
+			(event) => {
+				if (event.key === "Enter") {
+					this._hideGreeter();
+				}
+		});				
 	}
 
 	_showGreeter() {
