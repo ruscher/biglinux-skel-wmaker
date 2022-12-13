@@ -38,10 +38,32 @@
         DropCommand = "wmsystray %d";
         BuggyApplication = No;
         AutoLaunch = Yes;
-        Position = "0,4";
+        Position = "0,6";
         Lock = Yes;
         PasteCommand = "wmsystray %s";
         Command = wmsystray;
+      },
+      {
+        Forced = No;
+        Name = wmnd.wmnd;
+        DropCommand = "wmnd %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,5";
+        Lock = Yes;
+        PasteCommand = "wmnd %s";
+        Command = wmnd;
+      },
+      {
+        Forced = No;
+        Name = wmmemload.DockApp;
+        DropCommand = "wmmemload %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,4";
+        Lock = Yes;
+        PasteCommand = "wmmemload %s";
+        Command = wmmemload;
       }
     );
     AutoRaiseLower = No;
@@ -83,10 +105,32 @@
         DropCommand = "wmsystray %d";
         BuggyApplication = No;
         AutoLaunch = Yes;
-        Position = "0,4";
+        Position = "0,6";
         Lock = Yes;
         PasteCommand = "wmsystray %s";
         Command = wmsystray;
+      },
+      {
+        Forced = No;
+        Name = wmnd.wmnd;
+        DropCommand = "wmnd %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,5";
+        Lock = Yes;
+        PasteCommand = "wmnd %s";
+        Command = wmnd;
+      },
+      {
+        Forced = No;
+        Name = wmmemload.DockApp;
+        DropCommand = "wmmemload %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,4";
+        Lock = Yes;
+        PasteCommand = "wmmemload %s";
+        Command = wmmemload;
       }
     );
     Lowered = Yes;
