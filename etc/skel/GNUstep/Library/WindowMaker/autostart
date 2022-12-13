@@ -17,6 +17,8 @@
 ~/.config/polybar/launch.sh --material &
 #conky &
 wmclock &
+wmsystray &
+wmix &
 yakuake &
 /usr/lib/polkit-kde-authentication-agent-1 &
 xset m 20/10 4
