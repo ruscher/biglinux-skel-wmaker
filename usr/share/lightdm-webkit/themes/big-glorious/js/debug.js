@@ -34,6 +34,10 @@ class Debug {
 						key: 'awesome'
 					},
 					{
+						name: 'BigLinux',
+						key: 'biglinux'
+					},
+					{
 						name: 'bspwm',
 						key: 'bspwm'
 					},
@@ -72,34 +76,29 @@ class Debug {
 				],
 				users: [
 					{
-						display_name: 'Yasuho Hirose',
-						username: 'bestgirl',
-						image: 'assets/profiles/yasuhoh.jpg'
+						display_name: 'Rafael Ruscher',
+						username: 'ruscher',
+						image: 'assets/profiles/ruscher.png'
 					},
 					{
-						display_name: 'Josuke Higashikata',
-						username: '4balls',
-						image: 'assets/profiles/josukeh.jpg'
+						display_name: 'Bruno Gonçalves',
+						username: 'bigbruno',
+						image: 'assets/profiles/bigbruno.png'
 					},
 					{
-						display_name: 'Johnny Joestar',
-						username: 'tellhimyourself',
-						image: 'assets/profiles/johnnyj.jpg'
+						display_name: 'BarnabédiKartola',
+						username: 'barnabedikartola',
+						image: 'assets/profiles/barnabe.png'
 					},
 					{
-						display_name: 'Gyro Zepelli',
-						username: 'pizzamozarella',
-						image: 'assets/profiles/gyroz.jpg'
+						display_name: 'Tales Mendonça',
+						username: 'talesam',
+						image: 'assets/profiles/tales.png'
 					},
 					{
-						display_name: 'Diego Brando',
-						username: 'diosaur',
-						image: 'assets/profiles/diegob.jpg'
-					},
-					{
-						display_name: 'Funny Valentine',
-						username: 'napkinwiper',
-						image: 'assets/profiles/funnyv.jpg'
+						display_name: 'Elton Fabício',
+						username: 'eltonff',
+						image: 'assets/profiles/elton.png'
 					}
 				],
 				languages: [
