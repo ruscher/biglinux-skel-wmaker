@@ -1,5 +1,49 @@
 {
   Dock = {
+    Applications800 = (
+      {
+        Forced = No;
+        Name = Logo.WMDock;
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,0";
+        Lock = No;
+        Command = "-";
+      },
+      {
+        Forced = No;
+        Name = wmclock.WMClock;
+        DropCommand = "wmclock %d";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,1";
+        Lock = Yes;
+        PasteCommand = "wmclock %s";
+        Command = wmclock;
+      },
+      {
+        Forced = No;
+        Name = wmix.wmix;
+        DropCommand = "wmix %d";
+        BuggyApplication = No;
+        AutoLaunch = No;
+        Position = "0,2";
+        Lock = Yes;
+        PasteCommand = "wmix %s";
+        Command = wmix;
+      },
+      {
+        Forced = No;
+        Name = wmsystray.WMSYSTRAY;
+        DropCommand = "wmsystray %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,4";
+        Lock = Yes;
+        PasteCommand = "wmsystray %s";
+        Command = wmsystray;
+      }
+    );
     AutoRaiseLower = No;
     Applications = (
       {
@@ -21,28 +65,28 @@
         Lock = Yes;
         PasteCommand = "wmclock %s";
         Command = wmclock;
-      }
-    );
-    Applications1080 = (
-      {
-        Forced = No;
-        Name = Logo.WMDock;
-        BuggyApplication = No;
-        AutoLaunch = No;
-        Position = "0,0";
-        Lock = No;
-        Command = "-";
       },
       {
         Forced = No;
-        Name = wmclock.WMClock;
-        DropCommand = "wmclock %d";
+        Name = wmix.wmix;
+        DropCommand = "wmix %d";
         BuggyApplication = No;
         AutoLaunch = No;
-        Position = "0,1";
+        Position = "0,2";
         Lock = Yes;
-        PasteCommand = "wmclock %s";
-        Command = wmclock;
+        PasteCommand = "wmix %s";
+        Command = wmix;
+      },
+      {
+        Forced = No;
+        Name = wmsystray.WMSYSTRAY;
+        DropCommand = "wmsystray %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,4";
+        Lock = Yes;
+        PasteCommand = "wmsystray %s";
+        Command = wmsystray;
       }
     );
     Lowered = Yes;
@@ -87,11 +131,11 @@
             Omnipresent = No;
           }
         );
-        Collapsed = No;
+        Collapsed = Yes;
         AutoAttractIcons = No;
       };
       Name = Drawer0;
-      Position = "1856,128";
+      Position = "1216,192";
     }
   );
   Workspaces = (
