@@ -1,7 +1,10 @@
 {
   FTitleColor = "#ffffff";
   FrameBorderColor = "#b6b6b3";
+  SelectCursor = (builtin, cross);
+  QuestionCursor = (builtin, question_arrow);
   MenuDisabledColor = "#555555";
+  IconTitleBack = "#2a92c9";
   PixmapPath = (
     "/home/$USER/GNUstep/Library/WindowMaker/Pixmaps",
     "/home/$USER/GNUstep/Library/WindowMaker/Backgrounds",
@@ -11,7 +14,6 @@
     "/usr/share/WindowMaker/Backgrounds",
     "/usr/share/pixmaps"
   );
-  IconTitleBack = "#2a92c9";
   FTitleBack = (
     thgradient,
     "~/GNUstep/Library/WindowMaker/Themes/BigLinux-Texture.themed/cutcube.png",
@@ -19,32 +21,11 @@
     "#003e71",
     "#2a91c8"
   );
+  BottomLeftResizeCursor = (builtin, bottom_left_corner);
+  TopLeftResizeCursor = (builtin, top_left_corner);
+  ToggleKbdModeKey = None;
   ClipTitleFont = "Lato:bold:pixelsize=10";
   IconTitleFont = "Lato,sans serif:pixelsize=9";
-  LargeDisplayFont = "Lato,sans serif:pixelsize=24";
-  MoveDisplay = center;
-  IconTitleColor = "#ffffff";
-  MenuTitleColor = "#ffffff";
-  MenuTitleFont = "Lato,sans serif:bold:pixelsize=12";
-  MoveTo6to12Head = None;
-  WorkspaceBack = (
-    spixmap,
-    "~/GNUstep/Library/WindowMaker/Themes/BigLinux-Texture.themed/Big-retro.jpg",
-    gray20
-  );
-  HighlightTextColor = "#ffffff";
-  MenuScrollSpeed = ultrafast;
-  EnforceIconMargin = NO;
-  AppIconBalloons = YES;
-  ClipTitleColor = "#002a44";
-  MoveTo12to6Head = None;
-  FrameFocusedBorderColor = "#b6b6b3";
-  WindowTitleFont = "Lato:slant=0:weight=200:width=100:pixelsize=12";
-  ResizebarBack = (mhgradient, "#0bb1cb", "#2a92c9", "#2d85c6", "#006699");
-  MiniPreviewSize = 352;
-  KbdModeLock = NO;
-  FrameSelectedBorderColor = "#ffffff";
-  ToggleKbdModeKey = None;
   MenuTextBack = (
     tdgradient,
     "~/GNUstep/Library/WindowMaker/Themes/BigLinux-Texture.themed/random-grey-variations.png",
@@ -52,18 +33,51 @@
     "#383838",
     "#575757"
   );
+  LargeDisplayFont = "Lato,sans serif:pixelsize=24";
   WindowPlacement = center;
+  ResizeCursor = (builtin, sizing);
   CycleWorkspaces = YES;
+  TextCursor = (builtin, xterm);
+  MoveDisplay = center;
+  TitleJustify = center;
+  IconTitleColor = "#ffffff";
   MenuTextColor = "#dedede";
   IconBack = (mhgradient, "#0bb1cb", "#2a92c9", "#2d85c6", "#006699");
+  MenuTitleColor = "#ffffff";
   AntialiasedText = YES;
+  MenuTitleFont = "Lato,sans serif:bold:pixelsize=12";
+  WindowTitleExtendSpace = 0;
+  NormalCursor = (builtin, left_ptr);
+  NewStyle = new;
   WorkspaceNameDisplayPosition = bottom;
+  MoveTo6to12Head = None;
+  ArrowCursor = (builtin, top_left_arrow);
   MenuTextFont = "Lato,sans serif:pixelsize=12";
+  VerticalResizeCursor = (builtin, sb_v_double_arrow);
+  WorkspaceBack = (
+    spixmap,
+    "~/GNUstep/Library/WindowMaker/Themes/BigLinux-Texture.themed/Big-retro.jpg",
+    gray20
+  );
+  HighlightTextColor = "#ffffff";
   MenuTitleBack = (mhgradient, "#0bb1cb", "#2a92c9", "#2d85c6", "#006699");
+  MenuScrollSpeed = ultrafast;
+  EnforceIconMargin = NO;
   MouseWheelAction = SwitchWindows;
+  ClipTitleColor = "#002a44";
+  AppIconBalloons = YES;
+  MoveTo12to6Head = None;
+  WaitCursor = (builtin, watch);
+  TopRightResizeCursor = (builtin, top_right_corner);
+  BottomRightResizeCursor = (builtin, bottom_right_corner);
+  FrameFocusedBorderColor = "#b6b6b3";
   HighlightColor = "#006699";
+  WindowTitleFont = "Lato,sans serif:bold:pixelsize=12";
   WrapMenus = YES;
   CClipTitleColor = "#2d85c6";
+  MoveCursor = (builtin, fleur);
+  MenuStyle = normal;
+  ResizebarBack = (mhgradient, "#0bb1cb", "#2a92c9", "#2d85c6", "#006699");
   IconPath = (
     "/home/$USER/GNUstep/Library/Icons",
     "/home/$USER/GNUstep/Library/WindowMaker/Pixmaps",
@@ -73,8 +87,15 @@
     "/usr/share/WindowMaker/Pixmaps",
     "/usr/share/pixmaps"
   );
+  MiniPreviewSize = 352;
+  HorizontalResizeCursor = (builtin, sb_h_double_arrow);
+  KbdModeLock = NO;
+  FrameBorderWidth = 1;
+  MenuTextExtendSpace = 0;
   PTitleBack = (mhgradient, "#2c2d3d", "#16171c", "#002a34", "#002a44");
   UTitleColor = "#999999";
   UTitleBack = (mhgradient, "#232526", "#414345", "#666666", "#888888");
   PTitleColor = "#ffffff";
+  MenuTitleExtendSpace = 0;
+  FrameSelectedBorderColor = "#ffffff";
 }

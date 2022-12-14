@@ -14,12 +14,16 @@
 #
 # This file must be executable.
 #
-~/.config/polybar/launch.sh --material &
+#~/.config/polybar/launch.sh --material &
 #conky &
-wmclock &
-wmsystray &
-wmix &
-yakuake &
+#wmclock &
+#wmsystray &
+#wmsystemtray &
+#wmix &
+pamac-tray-plasma &
+nm-applet &
+#yakuake &
 /usr/lib/polkit-kde-authentication-agent-1 &
-xset m 20/10 4
+#spice-vdagent -x &
 
+xset m 20/10 4
