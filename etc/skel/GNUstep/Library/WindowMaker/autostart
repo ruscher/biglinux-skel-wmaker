@@ -20,6 +20,7 @@
 #wmsystray &
 #wmsystemtray &
 #wmix &
+xdg_menu&
 pamac-tray-plasma &
 nm-applet &
 #yakuake &
