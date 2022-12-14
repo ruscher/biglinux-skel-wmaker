@@ -15,7 +15,7 @@
         Name = wmclock.WMClock;
         DropCommand = "wmclock %d";
         BuggyApplication = No;
-        AutoLaunch = No;
+        AutoLaunch = Yes;
         Position = "0,1";
         Lock = Yes;
         PasteCommand = "wmclock %s";
@@ -26,22 +26,11 @@
         Name = wmix.wmix;
         DropCommand = "wmix %d";
         BuggyApplication = No;
-        AutoLaunch = No;
+        AutoLaunch = Yes;
         Position = "0,2";
         Lock = Yes;
         PasteCommand = "wmix %s";
         Command = wmix;
-      },
-      {
-        Forced = No;
-        Name = wmsystray.WMSYSTRAY;
-        DropCommand = "wmsystray %d";
-        BuggyApplication = No;
-        AutoLaunch = Yes;
-        Position = "0,6";
-        Lock = Yes;
-        PasteCommand = "wmsystray %s";
-        Command = wmsystray;
       },
       {
         Forced = No;
@@ -64,6 +53,17 @@
         Lock = Yes;
         PasteCommand = "wmmemload %s";
         Command = wmmemload;
+      },
+      {
+        Forced = No;
+        Name = wmsystemtray0.wmsystemtray;
+        DropCommand = "wmsystemtray %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,6";
+        Lock = Yes;
+        PasteCommand = "wmsystemtray %s";
+        Command = wmsystemtray;
       }
     );
     AutoRaiseLower = No;
@@ -82,7 +82,7 @@
         Name = wmclock.WMClock;
         DropCommand = "wmclock %d";
         BuggyApplication = No;
-        AutoLaunch = No;
+        AutoLaunch = Yes;
         Position = "0,1";
         Lock = Yes;
         PasteCommand = "wmclock %s";
@@ -93,22 +93,11 @@
         Name = wmix.wmix;
         DropCommand = "wmix %d";
         BuggyApplication = No;
-        AutoLaunch = No;
+        AutoLaunch = Yes;
         Position = "0,2";
         Lock = Yes;
         PasteCommand = "wmix %s";
         Command = wmix;
-      },
-      {
-        Forced = No;
-        Name = wmsystray.WMSYSTRAY;
-        DropCommand = "wmsystray %d";
-        BuggyApplication = No;
-        AutoLaunch = Yes;
-        Position = "0,6";
-        Lock = Yes;
-        PasteCommand = "wmsystray %s";
-        Command = wmsystray;
       },
       {
         Forced = No;
@@ -131,6 +120,17 @@
         Lock = Yes;
         PasteCommand = "wmmemload %s";
         Command = wmmemload;
+      },
+      {
+        Forced = No;
+        Name = wmsystemtray0.wmsystemtray;
+        DropCommand = "wmsystemtray %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,6";
+        Lock = Yes;
+        PasteCommand = "wmsystemtray %s";
+        Command = wmsystemtray;
       }
     );
     Lowered = Yes;
@@ -145,6 +145,7 @@
     Lock = No;
     Command = "-";
   };
+  Applications = ();
   Drawers = (
     {
       Dock = {
@@ -156,26 +157,14 @@
             DropCommand = "/usr/lib/polkit-kde-authentication-agent-1 %d";
             BuggyApplication = No;
             AutoLaunch = No;
-            Position = "-2,0";
+            Position = "-1,0";
             Lock = No;
             PasteCommand = "/usr/lib/polkit-kde-authentication-agent-1 %s";
             Command = "/usr/lib/polkit-kde-authentication-agent-1";
             Omnipresent = No;
-          },
-          {
-            Forced = No;
-            Name = yakuake.yakuake;
-            DropCommand = "yakuake %d";
-            BuggyApplication = No;
-            AutoLaunch = Yes;
-            Position = "-1,0";
-            Lock = Yes;
-            PasteCommand = "yakuake %s";
-            Command = yakuake;
-            Omnipresent = No;
           }
         );
-        Collapsed = Yes;
+        Collapsed = No;
         AutoAttractIcons = No;
       };
       Name = Drawer0;
@@ -267,4 +256,5 @@
       Name = "\303\201rea de Trabalho 2";
     }
   );
+  Workspace = "\303\201rea de Trabalho 1";
 }
