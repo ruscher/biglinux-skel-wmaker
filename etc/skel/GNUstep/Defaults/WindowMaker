@@ -1,8 +1,6 @@
 {
   FTitleColor = "#ffffff";
   FrameBorderColor = "#b6b6b3";
-  SelectCursor = (builtin, cross);
-  QuestionCursor = (builtin, question_arrow);
   MenuDisabledColor = "#555555";
   IconTitleBack = "#2a92c9";
   PixmapPath = (
@@ -21,8 +19,6 @@
     "#003e71",
     "#2a91c8"
   );
-  BottomLeftResizeCursor = (builtin, bottom_left_corner);
-  TopLeftResizeCursor = (builtin, top_left_corner);
   ToggleKbdModeKey = None;
   ClipTitleFont = "Lato:bold:pixelsize=10";
   IconTitleFont = "Lato,sans serif:pixelsize=9";
@@ -33,27 +29,19 @@
     "#383838",
     "#575757"
   );
-  LargeDisplayFont = "Lato,sans serif:pixelsize=24";
   WindowPlacement = center;
-  ResizeCursor = (builtin, sizing);
+  LargeDisplayFont = "Lato,sans serif:pixelsize=24";
   CycleWorkspaces = YES;
-  TextCursor = (builtin, xterm);
   MoveDisplay = center;
-  TitleJustify = center;
   IconTitleColor = "#ffffff";
   MenuTextColor = "#dedede";
   IconBack = (mhgradient, "#0bb1cb", "#2a92c9", "#2d85c6", "#006699");
-  MenuTitleColor = "#ffffff";
   AntialiasedText = YES;
+  MenuTitleColor = "#ffffff";
   MenuTitleFont = "Lato,sans serif:bold:pixelsize=12";
-  WindowTitleExtendSpace = 0;
-  NormalCursor = (builtin, left_ptr);
-  NewStyle = new;
   WorkspaceNameDisplayPosition = bottom;
   MoveTo6to12Head = None;
-  ArrowCursor = (builtin, top_left_arrow);
   MenuTextFont = "Lato,sans serif:pixelsize=12";
-  VerticalResizeCursor = (builtin, sb_v_double_arrow);
   WorkspaceBack = (
     spixmap,
     "~/GNUstep/Library/WindowMaker/Themes/BigLinux-Texture.themed/Big-retro.jpg",
@@ -67,16 +55,12 @@
   ClipTitleColor = "#002a44";
   AppIconBalloons = YES;
   MoveTo12to6Head = None;
-  WaitCursor = (builtin, watch);
-  TopRightResizeCursor = (builtin, top_right_corner);
-  BottomRightResizeCursor = (builtin, bottom_right_corner);
+  CloseKey = "Mod1+F4";
   FrameFocusedBorderColor = "#b6b6b3";
   HighlightColor = "#006699";
   WindowTitleFont = "Lato,sans serif:bold:pixelsize=12";
   WrapMenus = YES;
   CClipTitleColor = "#2d85c6";
-  MoveCursor = (builtin, fleur);
-  MenuStyle = normal;
   ResizebarBack = (mhgradient, "#0bb1cb", "#2a92c9", "#2d85c6", "#006699");
   IconPath = (
     "/home/$USER/GNUstep/Library/Icons",
@@ -88,14 +72,10 @@
     "/usr/share/pixmaps"
   );
   MiniPreviewSize = 352;
-  HorizontalResizeCursor = (builtin, sb_h_double_arrow);
   KbdModeLock = NO;
-  FrameBorderWidth = 1;
-  MenuTextExtendSpace = 0;
   PTitleBack = (mhgradient, "#2c2d3d", "#16171c", "#002a34", "#002a44");
   UTitleColor = "#999999";
   UTitleBack = (mhgradient, "#232526", "#414345", "#666666", "#888888");
   PTitleColor = "#ffffff";
-  MenuTitleExtendSpace = 0;
   FrameSelectedBorderColor = "#ffffff";
 }

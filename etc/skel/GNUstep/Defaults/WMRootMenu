@@ -1,6 +1,6 @@
 (
   BigLinux,
-  ("Aplicativos", OPEN_MENU, "~/GNUstep/Defaults/xdg_menu"),
+  (Aplicativos, OPEN_MENU, "~/GNUstep/Defaults/xdg_menu"),
   (
     WindowMaker,
     (
@@ -145,6 +145,8 @@
     ("Reiniciar Window Maker", RESTART),
     ("Sair do Window Maker", EXIT)
   ),
+  (Terminal, SHORTCUT, "Control+Mod1+t", EXEC, xterm),
+  ("Finalizar Xkill", SHORTCUT, "Control+Mod1+Escape", EXEC, xkill),
   (Executar..., EXEC, "%A(Executar, digite o comando:)"),
   (Logout, SHEXEC, "pkill -KILL -u $USER"),
   (Reiniciar, EXEC, reboot),
