@@ -156,9 +156,9 @@
             Name = "polkit-kde-authentication-agent-1.polkit-kde-authentication-agent-1";
             DropCommand = "/usr/lib/polkit-kde-authentication-agent-1 %d";
             BuggyApplication = No;
-            AutoLaunch = No;
+            AutoLaunch = Yes;
             Position = "-1,0";
-            Lock = No;
+            Lock = Yes;
             PasteCommand = "/usr/lib/polkit-kde-authentication-agent-1 %s";
             Command = "/usr/lib/polkit-kde-authentication-agent-1";
             Omnipresent = No;
