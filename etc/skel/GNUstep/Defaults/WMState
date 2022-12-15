@@ -34,17 +34,6 @@
       },
       {
         Forced = No;
-        Name = wmnd.wmnd;
-        DropCommand = "wmnd %d";
-        BuggyApplication = No;
-        AutoLaunch = Yes;
-        Position = "0,5";
-        Lock = Yes;
-        PasteCommand = "wmnd %s";
-        Command = wmnd;
-      },
-      {
-        Forced = No;
         Name = wmmemload.DockApp;
         DropCommand = "wmmemload %d";
         BuggyApplication = No;
@@ -64,6 +53,17 @@
         Lock = Yes;
         PasteCommand = "wmsystemtray %s";
         Command = wmsystemtray;
+      },
+      {
+        Forced = No;
+        Name = wmnd.wmnd;
+        DropCommand = "wmnd %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,5";
+        Lock = Yes;
+        PasteCommand = "wmnd %s";
+        Command = wmnd;
       }
     );
     AutoRaiseLower = No;
@@ -101,17 +101,6 @@
       },
       {
         Forced = No;
-        Name = wmnd.wmnd;
-        DropCommand = "wmnd %d";
-        BuggyApplication = No;
-        AutoLaunch = Yes;
-        Position = "0,5";
-        Lock = Yes;
-        PasteCommand = "wmnd %s";
-        Command = wmnd;
-      },
-      {
-        Forced = No;
         Name = wmmemload.DockApp;
         DropCommand = "wmmemload %d";
         BuggyApplication = No;
@@ -131,6 +120,17 @@
         Lock = Yes;
         PasteCommand = "wmsystemtray %s";
         Command = wmsystemtray;
+      },
+      {
+        Forced = No;
+        Name = wmnd.wmnd;
+        DropCommand = "wmnd %d";
+        BuggyApplication = No;
+        AutoLaunch = Yes;
+        Position = "0,5";
+        Lock = Yes;
+        PasteCommand = "wmnd %s";
+        Command = wmnd;
       }
     );
     Lowered = Yes;
@@ -145,7 +145,6 @@
     Lock = No;
     Command = "-";
   };
-  Applications = ();
   Drawers = (
     {
       Dock = {
@@ -164,7 +163,7 @@
             Omnipresent = No;
           }
         );
-        Collapsed = No;
+        Collapsed = Yes;
         AutoAttractIcons = No;
       };
       Name = Drawer0;
@@ -256,5 +255,4 @@
       Name = "\303\201rea de Trabalho 2";
     }
   );
-  Workspace = "\303\201rea de Trabalho 1";
 }

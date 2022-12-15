@@ -14,29 +14,38 @@
 #
 # This file must be executable.
 #
+
+# When using "lxrandr" and saving the file it starts with the saved configuration.
 if [ -e "$HOME/.config/autostart/lxrandr-autostart.desktop" ];then
     resolution=$(cat $HOME/.config/autostart/lxrandr-autostart.desktop | grep -i exec= | cut -d "'" -f2)
     $resolution &
 fi
 
-#~/.config/polybar/launch.sh --material &
-#conky &
-#wmclock &
-#wmsystray &
-#wmsystemtray &
-#wmix &
+# Automatically generate list of installed apps in WindowMaker menu
 xdg_menu &
+
+# Adds a systray of pamac updates to the wmsystemtray dock
 pamac-tray-plasma &
+
+# Add a network systray in docker dwm system tray
 nm-applet &
-#yakuake &
+
+# Enable login authentication
 /usr/lib/polkit-kde-authentication-agent-1 &
+
+# Works only in virtual machine. To copy text and paste in use real machine
 #spice-vdagent -x &
-xset m 20/10 4
-# if (ps -e | grep -m1 "wmix"); then
-#     sleep 3 && wmix &
-# fi
-#if ! pgrep wmix; then
-if ! ps -e | grep -m1 "wmix"; then
-  # Inicia o wmix
-  sleep 3 && wmix &
+
+# There is a failure to start the network wmnd dock, this if prevents this loading failure from happening
+if ps -e | grep -m1 "wmnd"; then
+    killall -q wmnd &
+    sleep 0.1 && wmnd &
 fi
+
+# There is a failure to start the sound wmix dock, this if prevents this loading failure from happening
+if ! ps -e | grep -m1 "wmix"; then
+    killall -q wmix &
+    sleep 0.1 && wmix &
+fi
+
+xset m 20/10 4
