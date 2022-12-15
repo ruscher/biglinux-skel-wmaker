@@ -14,6 +14,11 @@
 #
 # This file must be executable.
 #
+if [ -e "$HOME/.config/autostart/lxrandr-autostart.desktop" ];then
+    resolution=$(cat $HOME/.config/autostart/lxrandr-autostart.desktop | grep -i exec= | cut -d "'" -f2)
+    $resolution &
+fi
+
 #~/.config/polybar/launch.sh --material &
 #conky &
 #wmclock &
@@ -26,5 +31,12 @@ nm-applet &
 #yakuake &
 /usr/lib/polkit-kde-authentication-agent-1 &
 #spice-vdagent -x &
-
 xset m 20/10 4
+# if (ps -e | grep -m1 "wmix"); then
+#     sleep 3 && wmix &
+# fi
+#if ! pgrep wmix; then
+if ! ps -e | grep -m1 "wmix"; then
+  # Inicia o wmix
+  sleep 3 && wmix &
+fi
