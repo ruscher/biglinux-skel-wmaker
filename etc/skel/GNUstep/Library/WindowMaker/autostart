@@ -43,9 +43,9 @@ if ps -e | grep -m1 "wmnd"; then
 fi
 
 # There is a failure to start the sound wmix dock, this if prevents this loading failure from happening
-if ! ps -e | grep -m1 "wmix"; then
+if ps -e | grep -m1 "wmix"; then
     killall -q wmix &
-    sleep 0.1 && wmix &
+    sleep 0.5 && wmix &
 fi
 
 xset m 20/10 4
