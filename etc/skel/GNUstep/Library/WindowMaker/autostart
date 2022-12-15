@@ -30,6 +30,12 @@ pamac-tray-plasma &
 # Add a network systray in docker dwm system tray
 nm-applet &
 
+#Icon Systemtray Clipboard
+clipit &
+
+#Icom Volume Icon
+volumeicon &
+
 # Enable login authentication
 /usr/lib/polkit-kde-authentication-agent-1 &
 
