@@ -1,8 +1,7 @@
 {
-  FTitleColor = "#ffffff";
   FrameBorderColor = "#b6b6b3";
+  FTitleColor = "#ffffff";
   MenuDisabledColor = "#555555";
-  IconTitleBack = "#2a92c9";
   PixmapPath = (
     "/home/$USER/GNUstep/Library/WindowMaker/Pixmaps",
     "/home/$USER/GNUstep/Library/WindowMaker/Backgrounds",
@@ -12,6 +11,7 @@
     "/usr/share/WindowMaker/Backgrounds",
     "/usr/share/pixmaps"
   );
+  IconTitleBack = "#2a92c9";
   FTitleBack = (
     thgradient,
     "~/GNUstep/Library/WindowMaker/Themes/BigLinux-Texture.themed/cutcube.png",
@@ -29,18 +29,18 @@
     "#383838",
     "#575757"
   );
-  WindowPlacement = center;
   LargeDisplayFont = "Lato,sans serif:pixelsize=24";
+  WindowPlacement = center;
   CycleWorkspaces = YES;
   MoveDisplay = center;
   IconTitleColor = "#ffffff";
   MenuTextColor = "#dedede";
   IconBack = (mhgradient, "#0bb1cb", "#2a92c9", "#2d85c6", "#006699");
-  AntialiasedText = YES;
   MenuTitleColor = "#ffffff";
+  AntialiasedText = YES;
   MenuTitleFont = "Lato,sans serif:bold:pixelsize=12";
-  WorkspaceNameDisplayPosition = bottom;
   MoveTo6to12Head = None;
+  WorkspaceNameDisplayPosition = bottom;
   MenuTextFont = "Lato,sans serif:pixelsize=12";
   WorkspaceBack = (
     spixmap,
