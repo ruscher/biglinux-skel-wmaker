@@ -126,6 +126,7 @@
       )
     ),
     (Lupa, EXEC, wmagnify),
+    ("Captura de Tela", SHORTCUT, Print, EXEC, spectacle),
     ("\303\201reas de trabalho", WORKSPACE_MENU),
     (
       "\303\201rea de trabalho",
