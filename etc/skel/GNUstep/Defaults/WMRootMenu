@@ -1,6 +1,7 @@
 (
   BigLinux,
   (Aplicativos, OPEN_MENU, "~/GNUstep/Defaults/xdg_menu"),
+  ("Procurar Aplicativos", EXEC, "xfce4-appfinder"),
   (
     WindowMaker,
     (
