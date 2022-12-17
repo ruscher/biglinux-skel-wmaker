@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = windowmaker
+Target = biglinux-skel-wmaker
+
+[Action]
+Description = BigLinux set theme default windowmaker
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/big-prestart-windowmaker

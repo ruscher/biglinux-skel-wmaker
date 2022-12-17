@@ -40,7 +40,15 @@ volumeicon &
 /usr/lib/polkit-kde-authentication-agent-1 &
 
 # Works only in virtual machine. To copy text and paste in use real machine
-#spice-vdagent -x &
+vbox=$(lspci | grep -i "virtualbox")
+qemu=$(lspci | grep -i "virtio")
+if [ -n "$vbox" ]; then
+    VBoxClient-all &
+fi
+
+if [ -n "$qemu" ]; then
+    spice-vdagent -x &
+fi
 
 # There is a failure to start the network wmnd dock, this if prevents this loading failure from happening
 if ps -e | grep -m1 "wmnd"; then

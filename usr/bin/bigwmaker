@@ -1,0 +1,6 @@
+#!/bin/sh
+
+QT_QPA_PLATFORMTHEME=qt5ct
+SAL_USE_VCLPLUGIN=qt5
+
+exec /usr/bin/wmaker
