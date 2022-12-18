@@ -58,7 +58,7 @@ fi
 
 # There is a failure to start the sound wmix dock, this if prevents this loading failure from happening
 if ps -e | grep -m1 "wmix"; then
-    killall -q wmix &
+    sleep 3 && killall -q wmix &
     sleep 3 && wmix &
 fi
 
