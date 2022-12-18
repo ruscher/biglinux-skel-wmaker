@@ -30,12 +30,6 @@ pamac-tray-plasma &
 # Add a network systray in docker dwm system tray
 nm-applet &
 
-#Icon Systemtray Clipboard
-clipit &
-
-#Icom Volume Icon
-volumeicon &
-
 # Enable login authentication
 /usr/lib/polkit-kde-authentication-agent-1 &
 
@@ -50,16 +44,16 @@ if [ -n "$qemu" ]; then
     spice-vdagent -x &
 fi
 
-# There is a failure to start the network wmnd dock, this if prevents this loading failure from happening
-if ps -e | grep -m1 "wmnd"; then
-    killall -q wmnd &
-    sleep 0.1 && wmnd &
-fi
+# There is a failure to start docks and systemtray, this if prevents this loading failure from happening
+killall wmnd wmix volumeicon clipit
+sleep 4
+#Dock Network
+wmnd &
+#Dock Mixer
+wmix &
+#Icon Systemtray Clipboard
+clipit &
+#Icon Systemtray Volume
+volumeicon &
 
-# There is a failure to start the sound wmix dock, this if prevents this loading failure from happening
-if ps -e | grep -m1 "wmix"; then
-    sleep 3 && killall -q wmix &
-    sleep 3 && wmix &
-fi
-
-xset m 20/10 4
+#xset m 20/10 4
