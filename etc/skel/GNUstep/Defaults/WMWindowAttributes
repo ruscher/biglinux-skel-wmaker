@@ -1,22 +1,14 @@
 {
-  "brave-browser.brave.com,Chromium-browser" = {
+  dolphin.dolphin = {
+    Icon = "file-manager.png";
     AlwaysUserIcon = Yes;
-    Icon = browser.png;
   };
   soffice.Soffice = {
     Icon = soffice.Soffice.xpm;
   };
-  firefox.Firefox = {
+  "brave-browser.brave.com,Chromium-browser" = {
+    AlwaysUserIcon = Yes;
     Icon = browser.png;
-  };
-  yakuake.yakuake = {
-    Icon = yakuake.yakuake.xpm;
-  };
-  dolphin.dolphin = {
-    Icon = "file-manager.png";
-  };
-  bigbashview.py.bigbashview.py = {
-    Icon = bigbashview.py.bigbashview.py.xpm;
   };
   wmamixer.Wmamixer = {
     NoTitlebar = Yes;
@@ -29,12 +21,14 @@
   };
   kcalc.kcalc = {
     Icon = "accessories-calculator.png";
-  };
-  "pamac-manager.Pamac-manager" = {
-    Icon = "pamac-manager.Pamac-manager.xpm";
+    AlwaysUserIcon = Yes;
   };
   kate.kate = {
     Icon = kedit.png;
+    AlwaysUserIcon = Yes;
+  };
+  "pamac-manager.Pamac-manager" = {
+    Icon = "pamac-manager.Pamac-manager.xpm";
   };
   "polkit-kde-authentication-agent-1.polkit-kde-authentication-agent-1" = {
     Icon = "polkit-kde-authentication-agent-1.polkit-kde-authentication-agent-1.xpm";
