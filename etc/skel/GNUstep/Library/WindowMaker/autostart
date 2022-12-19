@@ -50,6 +50,6 @@ wmix &
 clipit &
 #Icon Systemtray Volume
 volumeicon &
-#xset m 20/10 4
+
 xset m 20/10 4
 
