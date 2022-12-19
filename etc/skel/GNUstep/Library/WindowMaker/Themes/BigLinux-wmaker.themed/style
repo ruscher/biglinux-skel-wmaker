@@ -5,84 +5,44 @@
   QuestionCursor = (builtin, question_arrow);
   MenuDisabledColor = "#666666";
   IconTitleBack = "#505a5e";
-  PixmapPath = (
-    "/home/$USER/GNUstep/Library/WindowMaker/Pixmaps",
-    "/home/$USER/GNUstep/Library/WindowMaker/Backgrounds",
-    "/home/$USER/GNUstep/Library/WindowMaker/CachedPixmaps",
-    "~/pixmaps",
-    "/usr/share/WindowMaker/Pixmaps",
-    "/usr/share/WindowMaker/Backgrounds",
-    "/usr/share/pixmaps"
-  );
   FTitleBack = (hgradient, "rgb:50/5a/5e", "rgb:20/2a/2e");
   BottomLeftResizeCursor = (builtin, bottom_left_corner);
   TopLeftResizeCursor = (builtin, top_left_corner);
-  ToggleKbdModeKey = None;
   ClipTitleFont = "Verdana:bold:pixelsize=10";
   IconTitleFont = "Arial,sans serif:pixelsize=9";
   MenuTextBack = (hgradient, "rgb:c2/c0/c5", "rgb:82/80/85");
   LargeDisplayFont = "Trebuchet MS,sans serif:pixelsize=24";
-  WindowPlacement = center;
   ResizeCursor = (builtin, sizing);
-  CycleWorkspaces = YES;
   TextCursor = (builtin, xterm);
-  MoveDisplay = center;
   TitleJustify = left;
   IconTitleColor = "#ffffff";
   MenuTextColor = "#000000";
   IconBack = (dgradient, "rgb:a6/a6/b6", "rgb:51/55/61");
   MenuTitleColor = "#ffffff";
-  AntialiasedText = YES;
   MenuTitleFont = "Trebuchet MS,sans serif:bold:pixelsize=12";
   WindowTitleExtendSpace = 0;
   NormalCursor = (builtin, left_ptr);
-  WorkspaceNameDisplayPosition = bottom;
-  MoveTo6to12Head = None;
   ArrowCursor = (builtin, top_left_arrow);
   MenuTextFont = "Trebuchet MS,sans serif:pixelsize=12";
+  WorkspaceBack = (spixmap, "wallpaper-big-wm.jpg", "#505075");
   VerticalResizeCursor = (builtin, sb_v_double_arrow);
-  WorkspaceBack = (
-    spixmap,
-    "~/GNUstep/Library/WindowMaker/Themes/BigLinux-wmaker.themed/wallpaper-big-wm.jpg",
-    "#505075"
-  );
   HighlightTextColor = "#000000";
   MenuTitleBack = (hgradient, "rgb:50/5a/5e", "rgb:20/2a/2e");
-  MenuScrollSpeed = ultrafast;
-  EnforceIconMargin = NO;
-  MouseWheelAction = SwitchWindows;
   ClipTitleColor = "#000000";
-  AppIconBalloons = YES;
-  MoveTo12to6Head = None;
-  WaitCursor = (builtin, watch);
   TopRightResizeCursor = (builtin, top_right_corner);
-  CloseKey = "Mod1+F4";
-  BottomRightResizeCursor = (builtin, bottom_right_corner);
-  FrameFocusedBorderColor = "#b6b6b3";
+  WaitCursor = (builtin, watch);
   HighlightColor = "#ffffff";
+  FrameFocusedBorderColor = "#b6b6b3";
+  BottomRightResizeCursor = (builtin, bottom_right_corner);
   WindowTitleFont = "Trebuchet MS,sans serif:bold:pixelsize=12";
-  WrapMenus = YES;
   CClipTitleColor = "#616161";
   MoveCursor = (builtin, fleur);
-  MenuStyle = normal;
   ResizebarBack = (solid, "rgb:c2/c0/c5");
-  IconPath = (
-    "/home/$USER/GNUstep/Library/Icons",
-    "/usr/share/icons/Tango",
-    "/home/$USER/GNUstep/Library/WindowMaker/Pixmaps",
-    "/home/$USER/GNUstep/Library/WindowMaker/CachedPixmaps",
-    "~/pixmaps",
-    "/usr/share/WindowMaker/Icons",
-    "/usr/share/WindowMaker/Pixmaps",
-    "/usr/share/pixmaps",
-    "/usr/share/icons/Tango/64x64/apps"
-  );
-  MiniPreviewSize = 352;
+  MenuStyle = normal;
   HorizontalResizeCursor = (builtin, sb_h_double_arrow);
-  KbdModeLock = NO;
   FrameBorderWidth = 1;
-  MenuTextExtendSpace = 0;
   PTitleBack = (hgradient, "rgb:51/50/55", "rgb:80/80/80");
+  MenuTextExtendSpace = 0;
   UTitleColor = "#000000";
   UTitleBack = (hgradient, "rgb:c2/c0/c5", "rgb:82/80/85");
   PTitleColor = "#ffffff";

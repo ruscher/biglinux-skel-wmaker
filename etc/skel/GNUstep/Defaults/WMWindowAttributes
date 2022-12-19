@@ -1,15 +1,19 @@
 {
-  dolphin.dolphin = {
-    Icon = dolphin.dolphin.xpm;
+  "brave-browser.brave.com,Chromium-browser" = {
+    AlwaysUserIcon = Yes;
+    Icon = browser.png;
+  };
+  soffice.Soffice = {
+    Icon = soffice.Soffice.xpm;
+  };
+  firefox.Firefox = {
+    Icon = browser.png;
   };
   yakuake.yakuake = {
     Icon = yakuake.yakuake.xpm;
   };
-  firefox.Firefox = {
-    Icon = firefox.Firefox.xpm;
-  };
-  soffice.Soffice = {
-    Icon = soffice.Soffice.xpm;
+  dolphin.dolphin = {
+    Icon = "file-manager.png";
   };
   bigbashview.py.bigbashview.py = {
     Icon = bigbashview.py.bigbashview.py.xpm;
@@ -23,25 +27,16 @@
     NoResizebar = Yes;
     NoCloseButton = Yes;
   };
-  Drawer0.WMDrawer = {
-    Icon = gaveta.png;
-  };
   kcalc.kcalc = {
-    Icon = kcalc.kcalc.xpm;
-  };
-  kate.kate = {
-    Icon = kate.kate.xpm;
+    Icon = "accessories-calculator.png";
   };
   "pamac-manager.Pamac-manager" = {
     Icon = "pamac-manager.Pamac-manager.xpm";
   };
-  Logo.WMDock = {
-    Icon = biglinux.png;
+  kate.kate = {
+    Icon = kedit.png;
   };
   "polkit-kde-authentication-agent-1.polkit-kde-authentication-agent-1" = {
     Icon = "polkit-kde-authentication-agent-1.polkit-kde-authentication-agent-1.xpm";
-  };
-  Logo.WMClip = {
-    Icon = clip.png;
   };
 }

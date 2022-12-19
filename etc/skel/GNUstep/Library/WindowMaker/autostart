@@ -14,36 +14,31 @@
 #
 # This file must be executable.
 #
-
 # When using "lxrandr" and saving the file it starts with the saved configuration.
 if [ -e "$HOME/.config/autostart/lxrandr-autostart.desktop" ];then
     resolution=$(cat $HOME/.config/autostart/lxrandr-autostart.desktop | grep -i exec= | cut -d "'" -f2)
     $resolution &
 fi
 
+sed -i 's|"custom_chrome_frame":true|"custom_chrome_frame":false|g' ~/.config/chromium/Default/Preferences ~/.config/google-chrome/Default/Preferences ~/.config/BraveSoftware/Brave-Browser/Default/Preferences
+
 # Automatically generate list of installed apps in WindowMaker menu
 xdg_menu &
-
 # Adds a systray of pamac updates to the wmsystemtray dock
 pamac-tray-plasma &
-
 # Add a network systray in docker dwm system tray
 nm-applet &
-
 # Enable login authentication
 /usr/lib/polkit-kde-authentication-agent-1 &
-
 # Works only in virtual machine. To copy text and paste in use real machine
 vbox=$(lspci | grep -i "virtualbox")
 qemu=$(lspci | grep -i "virtio")
 if [ -n "$vbox" ]; then
     VBoxClient-all &
 fi
-
 if [ -n "$qemu" ]; then
     spice-vdagent -x &
 fi
-
 # There is a failure to start docks and systemtray, this if prevents this loading failure from happening
 killall wmnd wmix volumeicon clipit
 sleep 4
@@ -55,5 +50,6 @@ wmix &
 clipit &
 #Icon Systemtray Volume
 volumeicon &
-
 #xset m 20/10 4
+xset m 20/10 4
+

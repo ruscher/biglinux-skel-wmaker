@@ -27,7 +27,7 @@
         DropCommand = "wmix %d";
         BuggyApplication = No;
         AutoLaunch = Yes;
-        Position = "0,2";
+        Position = "0,3";
         Lock = Yes;
         PasteCommand = "wmix %s";
         Command = wmix;
@@ -94,7 +94,7 @@
         DropCommand = "wmix %d";
         BuggyApplication = No;
         AutoLaunch = Yes;
-        Position = "0,2";
+        Position = "0,3";
         Lock = Yes;
         PasteCommand = "wmix %s";
         Command = wmix;
@@ -167,7 +167,7 @@
         AutoAttractIcons = No;
       };
       Name = Drawer0;
-      Position = "1216,192";
+      Position = "1216,128";
     }
   );
   Workspaces = (
@@ -179,13 +179,13 @@
           {
             Forced = No;
             Name = firefox.Firefox;
-            DropCommand = "firefox %d";
+            DropCommand = "brave %d";
             BuggyApplication = No;
             AutoLaunch = No;
             Position = "0,1";
             Lock = Yes;
-            PasteCommand = "firefox %s";
-            Command = firefox;
+            PasteCommand = "brave %s";
+            Command = brave;
             Omnipresent = No;
           },
           {
