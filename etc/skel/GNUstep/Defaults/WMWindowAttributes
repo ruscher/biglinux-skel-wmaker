@@ -1,7 +1,7 @@
 {
   dolphin.dolphin = {
-    Icon = "file-manager.png";
     AlwaysUserIcon = Yes;
+    Icon = "file-manager.png";
   };
   soffice.Soffice = {
     Icon = soffice.Soffice.xpm;
@@ -10,25 +10,20 @@
     AlwaysUserIcon = Yes;
     Icon = browser.png;
   };
-  wmamixer.Wmamixer = {
-    NoTitlebar = Yes;
-    NoAppIcon = Yes;
-    NoMiniaturizeButton = Yes;
-    NoBorder = Yes;
-    AlwaysUserIcon = No;
-    NoResizebar = Yes;
-    NoCloseButton = Yes;
-  };
   kcalc.kcalc = {
-    Icon = "accessories-calculator.png";
     AlwaysUserIcon = Yes;
+    Icon = "accessories-calculator.png";
   };
   kate.kate = {
-    Icon = kedit.png;
     AlwaysUserIcon = Yes;
+    Icon = kedit.png;
   };
   "pamac-manager.Pamac-manager" = {
     Icon = "pamac-manager.Pamac-manager.xpm";
+  };
+  Logo.WMDock = {
+    AlwaysUserIcon = Yes;
+    Icon = biglinux.png;
   };
   "polkit-kde-authentication-agent-1.polkit-kde-authentication-agent-1" = {
     Icon = "polkit-kde-authentication-agent-1.polkit-kde-authentication-agent-1.xpm";
